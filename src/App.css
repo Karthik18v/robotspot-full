@@ -1,0 +1,96 @@
+
+
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tasks-list{
+  display: flex;
+  list-style-type: none;
+  width: 90vw;
+  flex-wrap:wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.task{
+  display: flex;
+}
+.search-bar{
+  width: 40vw;
+  outline: none;
+  padding: 10px 20px;
+  margin: 10px;
+}
+.todo-button{
+  padding: 10px 20px;
+  color: white;
+  background-color: #2196F3;
+  border: 0px;
+  border-radius: 5px;
+}
+
+/* App.css */
+
+/* Container for each task */
+.task-item {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin-right: 20px;
+  width: 100%;
+  align-items: center;
+  min-width: 200px;
+  align-items: flex-start;
+}
+
+.task-item:hover {
+  transform: translateY(-5px); /* Slightly lifts the item on hover */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); /* Deepens the shadow on hover */
+}
+
+/* Task title */
+.task-item h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+/* Description */
+.task-item p {
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+}
+
+/* Task status and priority - small section for status and priority */
+.task-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Task Due Date */
+.task-item .due-date {
+  font-size: 0.9rem;
+  color: #777;
+  font-weight: 500;
+}
+
+.task-heading{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
